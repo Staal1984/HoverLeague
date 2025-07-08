@@ -1,0 +1,1 @@
+Sample content for interactions.js in HoverLeague_UI+Support
