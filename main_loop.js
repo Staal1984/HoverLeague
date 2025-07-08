@@ -1,0 +1,1 @@
+Sample content for main_loop.js in HoverLeague_Core
