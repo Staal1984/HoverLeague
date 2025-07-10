@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html>
-<head><title>Hover League</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hover League Launcher</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ff4c4c;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 600px;
+      width: 100%;
+      justify-items: center;
+    }
+    .btn {
+      background-color: transparent;
+      border: 2px solid #ff4c4c;
+      color: #ff4c4c;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      text-align: center;
+      width: 100%;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #ff4c4c;
+      color: #fff;
+    }
+    footer {
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
 <body>
-<h1>Hover League Launcher</h1>
-<!-- Buttons -->
-<a href='game.html'>Play</a>
-<a href='loadout.html'>Loadout</a>
-<a href='team-builder.html'>Team Builder</a>
-<a href='how-to-play.html'>How to Play</a>
-<a href='store.html'>Store</a>
-<a href='profile.html'>My Profile</a>
-<a href='leaderboard.html'>Leaderboard</a>
-<a href='settings.html'>Settings</a>
+  <h1>Hover League</h1>
+  <div class="menu">
+    <a class="btn" href="game.html">▶ Play</a>
+    <a class="btn" href="loadout.html">🎒 Loadout</a>
+    <a class="btn" href="team-builder.html">🛠️ Team Builder</a>
+    <a class="btn" href="how-to-play.html">📘 How to Play</a>
+    <a class="btn" href="store.html">🛒 Store</a>
+    <a class="btn" href="profile.html">🙋 My Profile</a>
+    <a class="btn" href="leaderboard.html">🏆 Leaderboard</a>
+    <a class="btn" href="settings.html">⚙️ Settings</a>
+  </div>
+  <footer>© 2025 Caging the Spirit Within™</footer>
 </body>
 </html>
