@@ -1,2 +1,97 @@
 <!DOCTYPE html>
-<html><head><title>Team Builder</title></head><body><h1>Create Your Team</h1></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hover League – Team Builder</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #00e6e6;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.3em;
+      margin-bottom: 25px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+    label {
+      font-size: 1em;
+      color: #ccc;
+    }
+    input, select {
+      padding: 10px;
+      width: 100%;
+      font-size: 1em;
+      border: 1px solid #00e6e6;
+      border-radius: 6px;
+      background-color: #111;
+      color: #fff;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00e6e6;
+      border: none;
+      color: #000;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    a.back {
+      display: block;
+      margin-top: 40px;
+      color: #888;
+      text-decoration: none;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Build Your Team Card</h1>
+  <form class="form-grid">
+    <div>
+      <label for="playerName">Player Name</label>
+      <input type="text" id="playerName" name="playerName" placeholder="Enter your name">
+    </div>
+    <div>
+      <label for="team">Team</label>
+      <select id="team" name="team">
+        <option>Velocity Vex 🔴</option>
+        <option>Specter Drift 🔵</option>
+      </select>
+    </div>
+    <div>
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option>Striker ⚽</option>
+        <option>Defender 🛡️</option>
+        <option>Support 🔧</option>
+        <option>Scout 🕵️</option>
+        <option>Enforcer 💥</option>
+        <option>Tech Specialist 🧠</option>
+      </select>
+    </div>
+    <div>
+      <label for="hoverboard">Hoverboard</label>
+      <input type="text" id="hoverboard" name="hoverboard" placeholder="e.g. Phantom Fang Blaze">
+    </div>
+    <div>
+      <label for="gear">Gear List</label>
+      <input type="text" id="gear" name="gear" placeholder="e.g. ArcBoots, Stick Pro, Armor X">
+    </div>
+    <button type="submit">Generate Player Card</button>
+  </form>
+  <a class="back" href="index.html">← Back to Launcher</a>
+</body>
+</html>
