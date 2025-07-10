@@ -1,83 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hover League – Store</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store – Hover League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: url('assets/images/store-background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      padding: 40px;
       font-family: 'Orbitron', sans-serif;
-      color: #ffffff;
-    }
-
-    .container {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 50px;
-      border-radius: 16px;
-      max-width: 900px;
-      margin: 100px auto;
-      text-align: center;
+      background-image: url("assets/images/store-background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
     }
 
     h1 {
-      font-size: 36px;
-      color: #00ffff;
+      font-size: 32px;
+      color: #ff4444;
       margin-bottom: 30px;
     }
 
-    .button-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+    .item {
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 20px;
     }
 
-    .button-grid a {
-      display: block;
-      padding: 20px;
-      background-color: #111;
-      color: #fff;
+    .item h2 {
+      font-size: 22px;
+      margin: 10px 0 5px;
+    }
+
+    .item span {
+      display: inline-block;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .price {
+      display: inline-block;
+      margin-top: 5px;
+      background: #0f0f0fcc;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 13px;
+      color: #00ffcc;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #00ccff;
       text-decoration: none;
-      border: 2px solid #00ffff;
-      border-radius: 10px;
-      transition: 0.3s;
-      font-size: 18px;
+      margin-right: 15px;
     }
 
-    .button-grid a:hover {
-      background-color: #00ffff;
-      color: #000;
-    }
-
-    .back-link {
-      display: block;
-      margin-top: 40px;
-      color: #aaa;
+    .footer a:hover {
       text-decoration: underline;
-    }
-
-    .back-link:hover {
-      color: #00ffff;
     }
   </style>
 </head>
 <body>
+  <h1>🔥 Hover League Store</h1>
 
-  <div class="container">
-    <h1>Hover League Store</h1>
-
-    <div class="button-grid">
-      <a href="#">🛹 Dragonfly Hoverboard</a>
-      <a href="#">👟 ArcBoots</a>
-      <a href="#">🛡️ Body Armor</a>
-      <a href="#">🪄 Hover Stick</a>
-    </div>
-
-    <a href="index.html" class="back-link">← Back to Launcher</a>
+  <div class="item">
+    <h2>🔥 ArcBoots</h2>
+    <span>Enhanced control and magnetic snap-on compatibility.</span><br />
+    <div class="price">Buy — $4.99</div>
   </div>
 
+  <div class="item">
+    <h2>💥 Trick Guard Kit</h2>
+    <span>Protective kit for skids, bumps and heavy tricks.</span><br />
+    <div class="price">Buy — $2.99</div>
+  </div>
+
+  <div class="item">
+    <h2>🎨 Holo Decals</h2>
+    <span>Customize your board with limited-edition holographic skins.</span><br />
+    <div class="price">Buy — $1.99</div>
+  </div>
+
+  <div class="item">
+    <h2>⚙️ Power Pack+ Upgrade</h2>
+    <span>Boost hoverboard performance with max thrust battery system.</span><br />
+    <div class="price">Buy — $3.99</div>
+  </div>
+
+  <div class="item">
+    <h2>🎮 Expansion Pack</h2>
+    <span>Unlock new stadiums, modes, and challenges.</span><br />
+    <div class="price">Buy — $9.99</div>
+  </div>
+
+  <div class="footer">
+    <a href="index.html">🏠 Home</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="settings.html">⚙️ Settings</a>
+  </div>
 </body>
 </html>
