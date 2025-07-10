@@ -2,81 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Controls – Hover League</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controls - Hover League</title>
   <style>
     body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
       background-image: url('assets/images/free-skate.jpg.png');
       background-size: cover;
       background-position: center;
-      margin: 0;
-      padding: 0;
-      font-family: 'Orbitron', sans-serif;
-      color: white;
+      text-align: center;
+      padding: 40px 20px;
     }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 40px;
-      margin: 50px;
-      border-radius: 20px;
-      max-width: 900px;
-    }
+
     h1 {
-      font-size: 46px;
-      color: #00ffff;
+      font-size: 48px;
       margin-bottom: 20px;
+      text-shadow: 0 0 15px cyan;
     }
-    h2 {
-      color: #ff8800;
-      margin-top: 30px;
+
+    .controls-section {
+      background-color: rgba(0, 0, 0, 0.65);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 0 20px rgba(0,255,255,0.3);
     }
-    ul {
+
+    .controls-section h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .controls-section ul {
       list-style: none;
       padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
       font-size: 18px;
     }
-    .mobile, .pc {
-      margin-top: 20px;
+
+    .controls-section li {
+      margin: 10px 0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #00ffff;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: cyan;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Controls + Tips</h1>
-    <p>Master your hoverboard with these controls and quick tips before entering the arena.</p>
+  <h1>🎮 Controls Guide</h1>
 
-    <div class="mobile">
-      <h2>📱 Mobile Controls</h2>
-      <ul>
-        <li>🔼 Swipe Up – Boost</li>
-        <li>⬅️➡️ Tilt – Steer left/right</li>
-        <li>👆 Tap – Shoot or Trick</li>
-        <li>👆👆 Double Tap – Power move</li>
-      </ul>
-    </div>
-
-    <div class="pc">
-      <h2>🖥️ PC Controls</h2>
-      <ul>
-        <li>W – Forward</li>
-        <li>A / D – Turn left / right</li>
-        <li>S – Quick stop</li>
-        <li>Spacebar – Boost</li>
-        <li>Mouse Click – Interact / Shoot</li>
-        <li>1–4 – Use Power Perks</li>
-      </ul>
-    </div>
-
-    <h2>🔥 Pro Tips</h2>
+  <div class="controls-section">
+    <h2>📱 Mobile Controls</h2>
     <ul>
-      <li>Hold Boost while turning for drift-style maneuvers</li>
-      <li>Double tap to chain power perks with tricks</li>
-      <li>Play Free Skate mode to master the controls</li>
+      <li>🕹️ Move: On-screen joystick</li>
+      <li>⚡ Boost: Tap the ⚡ button</li>
+      <li>🌀 Trick: Swipe up while moving</li>
+      <li>🎯 Shoot/Pass: Tap the 🏒 icon</li>
     </ul>
   </div>
+
+  <div class="controls-section">
+    <h2>⌨️ PC Controls</h2>
+    <ul>
+      <li>WASD = Move</li>
+      <li>Space = Boost</li>
+      <li>Q = Trick</li>
+      <li>Left Click = Shoot</li>
+      <li>Right Click = Pass</li>
+    </ul>
+  </div>
+
+  <a class="back-btn" href="index.html">⬅️ Back to Launcher</a>
 </body>
 </html>
