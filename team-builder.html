@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team Builder - Hover League</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <title>Team Builder – Hover League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: url('https://i.imgur.com/7VnP8vG.jpg') no-repeat center center fixed;
+      background: url('https://i.imgur.com/au5gTpu.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #00ffff;
       text-align: center;
@@ -17,94 +17,102 @@
 
     h1 {
       margin-top: 60px;
-      font-size: 3em;
+      font-size: 2.5em;
       color: #00ffff;
-      text-shadow: 0 0 20px #00ffff;
+      text-shadow: 0 0 15px #00ffff;
     }
 
     .builder-box {
       background: rgba(0, 0, 0, 0.7);
       margin: 60px auto;
-      padding: 40px;
+      padding: 30px;
       width: 90%;
-      max-width: 600px;
-      border-radius: 15px;
+      max-width: 500px;
+      border-radius: 20px;
       box-shadow: 0 0 25px #00ffff;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-size: 0.95em;
+      color: #ffffff;
     }
 
     input, select {
       width: 90%;
-      padding: 14px;
-      margin: 10px 0;
+      padding: 12px;
+      border-radius: 10px;
       border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      background-color: #222;
-      color: #00ffff;
-      box-shadow: 0 0 10px #00ffff55;
+      outline: none;
+      font-size: 1em;
+      margin-bottom: 15px;
+      background: #111;
+      color: #0ff;
+      box-shadow: 0 0 10px #00ffff inset;
     }
 
     button {
-      background-color: #ff3300;
-      color: white;
-      padding: 14px 28px;
-      margin-top: 20px;
+      padding: 12px 30px;
       border: none;
       border-radius: 10px;
-      font-size: 1.2em;
+      background: #ff5500;
+      color: white;
+      font-size: 1.1em;
+      font-family: 'Orbitron', sans-serif;
       cursor: pointer;
-      box-shadow: 0 0 15px #ff3300;
-      transition: background 0.3s ease;
+      box-shadow: 0 0 10px #ff5500;
+      transition: 0.3s ease;
     }
 
     button:hover {
-      background-color: #cc0000;
+      background: #ffaa00;
+      box-shadow: 0 0 20px #ffaa00;
     }
 
-    .back-link {
-      display: block;
-      margin-top: 30px;
-      color: #ffffff;
-      font-weight: bold;
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #00ffff;
       text-decoration: none;
     }
 
-    .back-link:hover {
+    a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <h1>Build Your Team Identity</h1>
-
   <div class="builder-box">
     <form>
-      <input type="text" placeholder="Player Name" required />
-      
-      <select required>
-        <option disabled selected>Select Team</option>
-        <option>Velocity Vex 🔴</option>
-        <option>Specter Drift 🔵</option>
+      <label for="player">Player Name</label>
+      <input type="text" id="player" placeholder="Enter your name" required>
+
+      <label for="team">Select Team</label>
+      <select id="team" required>
+        <option value="">-- Choose Team --</option>
+        <option value="Velocity Vex">Velocity Vex 🔴</option>
+        <option value="Specter Drift">Specter Drift 🔵</option>
       </select>
-      
-      <select required>
-        <option disabled selected>Select Role</option>
-        <option>Striker ⚽</option>
-        <option>Defender 🛡️</option>
-        <option>Support 🔧</option>
-        <option>Scout 🕵️</option>
-        <option>Enforcer 💥</option>
-        <option>Tech Specialist 🧠</option>
+
+      <label for="role">Select Role</label>
+      <select id="role" required>
+        <option value="">-- Choose Role --</option>
+        <option value="Striker">Striker ⚽</option>
+        <option value="Defender">Defender 🛡️</option>
+        <option value="Support">Support 🔧</option>
+        <option value="Scout">Scout 🕵️</option>
+        <option value="Enforcer">Enforcer 💥</option>
+        <option value="Tech Specialist">Tech Specialist 🧠</option>
       </select>
-      
-      <input type="text" placeholder="Hoverboard Model" required />
-      
+
+      <label for="board">Hoverboard Model</label>
+      <input type="text" id="board" placeholder="e.g. Dragonfly, Dark Mist" required>
+
       <button type="submit">Submit</button>
     </form>
   </div>
-
-  <a class="back-link" href="index.html">&larr; Back to Main Menu</a>
-
+  <a href="index.html">&larr; Back to Main Menu</a>
 </body>
 </html>
