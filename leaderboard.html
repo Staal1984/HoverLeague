@@ -3,58 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Leaderboard</title>
-  <style>
-    body {
-      font-family: 'Orbitron', sans-serif;
-      background-color: #0d0d0d;
-      color: white;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      font-size: 2em;
-      color: #ffcc00;
-    }
-    .board {
-      padding: 30px;
-    }
-    .player {
-      background: #1f1f1f;
-      margin: 10px auto;
-      padding: 15px;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ffcc00;
-    }
-    .player span {
-      display: inline-block;
-      min-width: 100px;
-    }
-    .back-btn {
-      margin-top: 40px;
-      background: #ffcc00;
-      color: black;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-  </style>
+  <title>Leaderboard – Hover League</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>🏆 Leaderboard</header>
-  <div class="board">
-    <div class="player"><span>#1</span> <span>BlitzX</span> <span>4200 pts</span></div>
-    <div class="player"><span>#2</span> <span>NovaDrift</span> <span>3875 pts</span></div>
-    <div class="player"><span>#3</span> <span>GhostWheel</span> <span>3660 pts</span></div>
-    <div class="player"><span>#4</span> <span>SkyLancer</span> <span>3590 pts</span></div>
-    <div class="player"><span>#5</span> <span>EchoRider</span> <span>3455 pts</span></div>
+  <div class="container">
+    <h1>🏆 Leaderboard</h1>
+    <table class="leaderboard">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Team</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>BlitzBurner</td>
+          <td>Velocity Vex 🔴</td>
+          <td>9,450</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>IceRider</td>
+          <td>Specter Drift 🔵</td>
+          <td>8,970</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>ShadowArc</td>
+          <td>Velocity Vex 🔴</td>
+          <td>8,550</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>NovaSkater</td>
+          <td>Specter Drift 🔵</td>
+          <td>8,210</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>GhostBlade</td>
+          <td>Velocity Vex 🔴</td>
+          <td>7,980</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="nav-buttons">
+      <a href="index.html">🏠 Home</a>
+      <a href="profile.html">👤 Profile</a>
+      <a href="settings.html">⚙️ Settings</a>
+    </div>
   </div>
-  <button class="back-btn" onclick="window.location.href='index.html'">Back to Launcher</button>
 </body>
 </html>
