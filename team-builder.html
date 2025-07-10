@@ -7,60 +7,70 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Orbitron', sans-serif;
-      background: url('https://i.imgur.com/OdL0XPt.jpg') no-repeat center center fixed;
+      background: url("https://i.imgur.com/OdL0XPt.jpg") no-repeat center center fixed;
       background-size: cover;
       color: #00ffff;
       text-align: center;
     }
+
     h1 {
-      color: #00ffff;
+      margin-top: 50px;
       font-size: 2.5rem;
-      margin-top: 40px;
-      text-shadow: 0 0 10px #00ffff;
+      text-shadow: 0 0 15px #00ffff;
     }
-    .builder-section {
-      background-color: rgba(0, 0, 0, 0.7);
-      margin: 40px auto;
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.7);
       padding: 30px;
-      border-radius: 10px;
-      width: 85%;
-      max-width: 700px;
-      box-shadow: 0 0 20px #00ffff33;
-    }
-    .builder-section h2 {
-      color: #ff8800;
-      font-size: 1.5rem;
-    }
-    input, select {
-      padding: 10px;
+      margin: 50px auto;
+      border-radius: 12px;
       width: 90%;
-      margin: 10px 0;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00ffff88;
+    }
+
+    .form-container h2 {
+      color: #ff8800;
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+      padding: 12px;
+      font-size: 1rem;
       border-radius: 6px;
       border: none;
-      font-size: 1rem;
     }
+
     button {
       padding: 12px 24px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       border: none;
-      background-color: #ff3300;
-      color: white;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    button:hover {
-      background-color: #cc0000;
-    }
-    .back {
-      margin-top: 30px;
-      display: inline-block;
+      border-radius: 8px;
+      background: #ff3300;
       color: #fff;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #cc0000;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 30px;
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
     }
-    .back:hover {
+
+    .back-link:hover {
       text-decoration: underline;
     }
   </style>
@@ -69,16 +79,19 @@
 
   <h1>Build Your Team Identity</h1>
 
-  <div class="builder-section">
+  <div class="form-container">
     <h2>Enter Player Info</h2>
+
     <input type="text" placeholder="Player Name" />
+    
     <select>
-      <option value="" disabled selected>Select Team</option>
+      <option disabled selected>Select Team</option>
       <option>Velocity Vex 🔴</option>
       <option>Specter Drift 🔵</option>
     </select>
+
     <select>
-      <option value="" disabled selected>Choose Role</option>
+      <option disabled selected>Choose Role</option>
       <option>Striker ⚽</option>
       <option>Defender 🛡️</option>
       <option>Support 🔧</option>
@@ -86,11 +99,13 @@
       <option>Enforcer 💥</option>
       <option>Tech Specialist 🧠</option>
     </select>
+
     <input type="text" placeholder="Your Hoverboard Model" />
+
     <button>Submit</button>
   </div>
 
-  <a class="back" href="index.html">&larr; Back to Main Menu</a>
+  <a class="back-link" href="index.html">&larr; Back to Main Menu</a>
 
 </body>
 </html>
