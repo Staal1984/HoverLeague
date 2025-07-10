@@ -1,0 +1,22 @@
+Hover League™ Credits
+
+Lead Designer:
+- Brenden Staal
+
+Development & UI:
+- ChatGPT (OpenAI)
+
+Inspiration & Support:
+- Family
+- Friends
+- All early testers
+
+Assets & Resources:
+- Icons: Font Awesome
+- Fonts: Google Fonts (Segoe UI)
+- Sounds: Hover FX Audio Pack
+- Game Engine Inspiration: Phaser, Unity UI Styles
+
+Legal Notice:
+All game mechanics, designs, and systems are copyright © 2025 Caging the Spirit Within™.
+All rights reserved.
