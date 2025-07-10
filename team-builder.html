@@ -3,95 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hover League – Team Builder</title>
+  <title>Team Builder - Hover League</title>
   <style>
     body {
-      background-color: #0a0a0a;
-      color: #00e6e6;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://i.imgur.com/OdL0XPt.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #00ffff;
       text-align: center;
     }
     h1 {
-      font-size: 2.3em;
-      margin-bottom: 25px;
+      color: #00ffff;
+      font-size: 2.5rem;
+      margin-top: 40px;
+      text-shadow: 0 0 10px #00ffff;
     }
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      max-width: 500px;
-      margin: auto;
-      text-align: left;
+    .builder-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 85%;
+      max-width: 700px;
+      box-shadow: 0 0 20px #00ffff33;
     }
-    label {
-      font-size: 1em;
-      color: #ccc;
+    .builder-section h2 {
+      color: #ff8800;
+      font-size: 1.5rem;
     }
     input, select {
       padding: 10px;
-      width: 100%;
-      font-size: 1em;
-      border: 1px solid #00e6e6;
+      width: 90%;
+      margin: 10px 0;
       border-radius: 6px;
-      background-color: #111;
-      color: #fff;
+      border: none;
+      font-size: 1rem;
     }
     button {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #00e6e6;
+      padding: 12px 24px;
+      font-size: 1rem;
       border: none;
-      color: #000;
-      font-size: 1em;
+      background-color: #ff3300;
+      color: white;
       border-radius: 6px;
       cursor: pointer;
+      margin-top: 20px;
     }
-    a.back {
-      display: block;
-      margin-top: 40px;
-      color: #888;
+    button:hover {
+      background-color: #cc0000;
+    }
+    .back {
+      margin-top: 30px;
+      display: inline-block;
+      color: #fff;
       text-decoration: none;
-      font-size: 0.9em;
-      text-align: center;
+      font-weight: bold;
+    }
+    .back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Build Your Team Card</h1>
-  <form class="form-grid">
-    <div>
-      <label for="playerName">Player Name</label>
-      <input type="text" id="playerName" name="playerName" placeholder="Enter your name">
-    </div>
-    <div>
-      <label for="team">Team</label>
-      <select id="team" name="team">
-        <option>Velocity Vex 🔴</option>
-        <option>Specter Drift 🔵</option>
-      </select>
-    </div>
-    <div>
-      <label for="role">Role</label>
-      <select id="role" name="role">
-        <option>Striker ⚽</option>
-        <option>Defender 🛡️</option>
-        <option>Support 🔧</option>
-        <option>Scout 🕵️</option>
-        <option>Enforcer 💥</option>
-        <option>Tech Specialist 🧠</option>
-      </select>
-    </div>
-    <div>
-      <label for="hoverboard">Hoverboard</label>
-      <input type="text" id="hoverboard" name="hoverboard" placeholder="e.g. Phantom Fang Blaze">
-    </div>
-    <div>
-      <label for="gear">Gear List</label>
-      <input type="text" id="gear" name="gear" placeholder="e.g. ArcBoots, Stick Pro, Armor X">
-    </div>
-    <button type="submit">Generate Player Card</button>
-  </form>
-  <a class="back" href="index.html">← Back to Launcher</a>
+
+  <h1>Build Your Team Identity</h1>
+
+  <div class="builder-section">
+    <h2>Enter Player Info</h2>
+    <input type="text" placeholder="Player Name" />
+    <select>
+      <option value="" disabled selected>Select Team</option>
+      <option>Velocity Vex 🔴</option>
+      <option>Specter Drift 🔵</option>
+    </select>
+    <select>
+      <option value="" disabled selected>Choose Role</option>
+      <option>Striker ⚽</option>
+      <option>Defender 🛡️</option>
+      <option>Support 🔧</option>
+      <option>Scout 🕵️</option>
+      <option>Enforcer 💥</option>
+      <option>Tech Specialist 🧠</option>
+    </select>
+    <input type="text" placeholder="Your Hoverboard Model" />
+    <button>Submit</button>
+  </div>
+
+  <a class="back" href="index.html">&larr; Back to Main Menu</a>
+
 </body>
 </html>
