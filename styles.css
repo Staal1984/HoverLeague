@@ -1,0 +1,67 @@
+/* Global Styling */
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f4f4c4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: #ff4c4c;
+}
+
+/* Button Styling */
+.btn {
+  display: block;
+  background-color: transparent;
+  border: 2px solid #ff4c4c;
+  color: #ff4c4c;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1.1em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff4c4c;
+  color: #ffffff;
+}
+
+/* Page Container */
+.container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Table for Leaderboard */
+table.leaderboard {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table.leaderboard th,
+table.leaderboard td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+table.leaderboard th {
+  background-color: #222;
+  color: #f4f4c4;
+}
+
+table.leaderboard tr:nth-child(even) {
+  background-color: #1c1c1c;
+}
