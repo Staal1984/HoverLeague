@@ -1,2 +1,109 @@
 <!DOCTYPE html>
-<html><head><title>Profile</title></head><body><h1>Your Player Profile</h1></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #00f0ff;
+      margin-bottom: 30px;
+    }
+    .profile-container {
+      max-width: 600px;
+      margin: auto;
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      border: 2px solid #00f0ff;
+    }
+    .profile-field {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      color: #888;
+      margin-bottom: 5px;
+      font-size: 0.9em;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+    }
+    .save-btn {
+      background-color: #00f0ff;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>👤 My Hover League Profile</h1>
+
+  <div class="profile-container">
+    <div class="profile-field">
+      <label for="player-name">Player Name</label>
+      <input type="text" id="player-name" placeholder="Enter your name" />
+    </div>
+    <div class="profile-field">
+      <label for="team">Team</label>
+      <select id="team">
+        <option value="velocity-vex">Velocity Vex 🔴</option>
+        <option value="specter-drift">Specter Drift 🔵</option>
+      </select>
+    </div>
+    <div class="profile-field">
+      <label for="role">Role</label>
+      <select id="role">
+        <option value="striker">Striker ⚽</option>
+        <option value="defender">Defender 🛡️</option>
+        <option value="support">Support 🔧</option>
+        <option value="scout">Scout 🕵️</option>
+        <option value="enforcer">Enforcer 💥</option>
+        <option value="tech">Tech Specialist 🧠</option>
+      </select>
+    </div>
+    <div class="profile-field">
+      <label for="board">Board Model</label>
+      <select id="board">
+        <option>Dark Mist</option>
+        <option>Dragon Slayer</option>
+        <option>Cloud Runner</option>
+        <option>Velocity Vex</option>
+        <option>Specter Drift</option>
+      </select>
+    </div>
+    <div class="profile-field">
+      <label for="gear">Gear</label>
+      <input type="text" id="gear" placeholder="Helmet, ArcBoots, Stick..." />
+    </div>
+    <button class="save-btn">Save My Profile</button>
+  </div>
+
+  <a class="back" href="index.html">← Back to Launcher</a>
+</body>
+</html>
