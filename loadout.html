@@ -3,68 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hover League – Loadout</title>
+  <title>Loadout – Hover League</title>
+  <link rel="stylesheet" href="style.css"/>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #00f2ff;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
-      text-align: center;
+      background-image: url('assets/images/arena-walkout.jpg.png');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      margin: 50px;
+      border-radius: 20px;
+      max-width: 800px;
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 30px;
-    }
-    .loadout-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .slot {
-      border: 2px dashed #00f2ff;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .slot h2 {
-      font-size: 1.3em;
+      font-size: 48px;
+      color: #ff3c00;
       margin-bottom: 10px;
     }
-    .slot p {
-      color: #ccc;
-      font-size: 0.9em;
+    p {
+      font-size: 20px;
+      line-height: 1.5;
     }
-    a.back {
-      display: block;
-      margin-top: 40px;
-      color: #888;
-      text-decoration: none;
-      font-size: 0.9em;
+    .loadout-options {
+      margin-top: 30px;
+    }
+    .loadout-options h2 {
+      color: #00ffff;
+    }
+    .item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #00ffff;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
     }
   </style>
 </head>
 <body>
-  <h1>Choose Your Loadout</h1>
-  <div class="loadout-grid">
-    <div class="slot">
-      <h2>⚡ Hoverboard</h2>
-      <p>Select your board style and setup.</p>
-    </div>
-    <div class="slot">
-      <h2>👟 ArcBoots</h2>
-      <p>Choose boot type and magnetic style.</p>
-    </div>
-    <div class="slot">
-      <h2>🛡️ Body Gear</h2>
-      <p>Pick armor, pads, and visual upgrades.</p>
-    </div>
-    <div class="slot">
-      <h2>🏒 Stick</h2>
-      <p>Select your Hover Stick variant.</p>
+  <div class="overlay">
+    <h1>Loadout Station</h1>
+    <p>Before you hit the arena, choose your board, armor, and power upgrades.</p>
+
+    <div class="loadout-options">
+      <h2>🏄 Hoverboard Selection</h2>
+      <div class="item">DRAGONFLY – Balanced performance</div>
+      <div class="item">DARK MIST – Light, foldable & stealthy</div>
+      <div class="item">DRAGON SLAYER – Max speed and lift</div>
+
+      <h2>🛡️ Armor Set</h2>
+      <div class="item">Standard Pads – Basic protection</div>
+      <div class="item">Pro Kit – Full helmet, vest, and guards</div>
+      <div class="item">League Armor – Futuristic hover armor</div>
+
+      <h2>🔧 Power Perks</h2>
+      <div class="item">Boost Pack – Short burst of speed</div>
+      <div class="item">Mag-Grip – Auto stability assist</div>
+      <div class="item">Glow Trail – Visual FX trail</div>
     </div>
   </div>
-  <a class="back" href="index.html">← Back to Launcher</a>
 </body>
 </html>
