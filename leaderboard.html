@@ -1,2 +1,60 @@
 <!DOCTYPE html>
-<html><head><title>Leaderboard</title></head><body><h1>Top Players</h1></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard</title>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      font-size: 2em;
+      color: #ffcc00;
+    }
+    .board {
+      padding: 30px;
+    }
+    .player {
+      background: #1f1f1f;
+      margin: 10px auto;
+      padding: 15px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+    .player span {
+      display: inline-block;
+      min-width: 100px;
+    }
+    .back-btn {
+      margin-top: 40px;
+      background: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>🏆 Leaderboard</header>
+  <div class="board">
+    <div class="player"><span>#1</span> <span>BlitzX</span> <span>4200 pts</span></div>
+    <div class="player"><span>#2</span> <span>NovaDrift</span> <span>3875 pts</span></div>
+    <div class="player"><span>#3</span> <span>GhostWheel</span> <span>3660 pts</span></div>
+    <div class="player"><span>#4</span> <span>SkyLancer</span> <span>3590 pts</span></div>
+    <div class="player"><span>#5</span> <span>EchoRider</span> <span>3455 pts</span></div>
+  </div>
+  <button class="back-btn" onclick="window.location.href='index.html'">Back to Launcher</button>
+</body>
+</html>
