@@ -1,2 +1,57 @@
 <!DOCTYPE html>
-<html><head><title>Game</title></head><body><h1>Game Arena Loading...</h1></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hover League – Game Mode</title>
+  <style>
+    body {
+      background-color: #101820;
+      color: #00e0ff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .game-modes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .btn {
+      background: transparent;
+      color: #00e0ff;
+      border: 2px solid #00e0ff;
+      padding: 15px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #00e0ff;
+      color: #000;
+    }
+    a.back {
+      display: block;
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Your Game Mode</h1>
+  <div class="game-modes">
+    <a class="btn" href="#">🏒 Multiplayer Match</a>
+    <a class="btn" href="#">🤖 Solo Practice</a>
+    <a class="btn" href="#">✨ Trick Run</a>
+  </div>
+  <a class="back" href="index.html">← Back to Launcher</a>
+</body>
+</html>
