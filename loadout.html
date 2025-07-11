@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Loadout – Hover League</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loadout - Hover League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
-      background-image: url('assets/images/arena-walkout.jpg.png');
-      background-size: cover;
-      background-position: center;
-      font-family: 'Orbitron', sans-serif;
-      color: white;
       margin: 0;
-      padding: 0;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      margin: 50px;
-      border-radius: 20px;
-      max-width: 800px;
-    }
-    h1 {
-      font-size: 48px;
-      color: #ff3c00;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 1.5;
-    }
-    .loadout-options {
-      margin-top: 30px;
-    }
-    .loadout-options h2 {
+      font-family: 'Orbitron', sans-serif;
+      background: url('assets/images/loadout-background.png') no-repeat center center fixed;
+      background-size: cover;
       color: #00ffff;
+      text-align: center;
     }
-    .item {
-      margin-bottom: 15px;
-      padding: 10px;
-      border: 1px solid #00ffff;
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.05);
+
+    .container {
+      margin-top: 100px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      width: 80%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      background: #ff5500;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #ff2200;
+    }
+
+    .back-link {
+      margin-top: 20px;
+      display: block;
+      color: #ffffff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Loadout Station</h1>
-    <p>Before you hit the arena, choose your board, armor, and power upgrades.</p>
+  <div class="container">
+    <h1>Choose Your Loadout</h1>
+    <p>Select your board, gear, and powerups before hitting the arena.</p>
 
-    <div class="loadout-options">
-      <h2>🏄 Hoverboard Selection</h2>
-      <div class="item">DRAGONFLY – Balanced performance</div>
-      <div class="item">DARK MIST – Light, foldable & stealthy</div>
-      <div class="item">DRAGON SLAYER – Max speed and lift</div>
+    <a href="#" class="button">Hoverboard</a>
+    <a href="#" class="button">ArcBoots</a>
+    <a href="#" class="button">Armor</a>
+    <a href="#" class="button">FX Skins</a>
+    <a href="#" class="button">Powerups</a>
 
-      <h2>🛡️ Armor Set</h2>
-      <div class="item">Standard Pads – Basic protection</div>
-      <div class="item">Pro Kit – Full helmet, vest, and guards</div>
-      <div class="item">League Armor – Futuristic hover armor</div>
-
-      <h2>🔧 Power Perks</h2>
-      <div class="item">Boost Pack – Short burst of speed</div>
-      <div class="item">Mag-Grip – Auto stability assist</div>
-      <div class="item">Glow Trail – Visual FX trail</div>
-    </div>
+    <a href="index.html" class="back-link">← Back to Main Menu</a>
   </div>
 </body>
 </html>
+
