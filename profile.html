@@ -9,73 +9,66 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      color: white;
-      background: url("assets/images/profile-background.png") no-repeat center center fixed;
+      background: url("assets/images/profile-background.png.png") no-repeat center center fixed;
       background-size: cover;
-    }
-
-    .container {
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.6);
-      max-width: 800px;
-      margin: 80px auto;
-      border-radius: 16px;
-      box-shadow: 0 0 24px rgba(255, 255, 255, 0.2);
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .profile-detail {
-      margin-top: 30px;
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    .label {
-      font-weight: bold;
-      color: #00ffff;
-    }
-
-    .back-button {
-      display: block;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .back-button a {
-      text-decoration: none;
       color: white;
-      background: #00aaff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      transition: background 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    .back-button a:hover {
-      background: #0077cc;
+    .profile-card {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: left;
+      width: 350px;
+      box-shadow: 0 0 12px rgba(255, 0, 0, 0.7);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .return-btn {
+      display: block;
+      margin: 25px auto 0;
+      background-color: #00cfff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .return-btn:hover {
+      background-color: #00a4cc;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Player Profile</h1>
-    <div class="profile-detail">
-      <div><span class="label">Name:</span> Brenden Staal</div>
-      <div><span class="label">Team:</span> Velocity Vex 🔴</div>
-      <div><span class="label">Role:</span> Striker ⚽</div>
-      <div><span class="label">Hoverboard:</span> Dragon Slayer X</div>
-      <div><span class="label">Rank:</span> Level 8 — Shadow Captain</div>
-      <div><span class="label">Gear:</span> ArcBoots, Redlight Armor, HoverStick Pro</div>
-      <div><span class="label">Tagline:</span> "No Limits. No Gravity."</div>
-    </div>
-
-    <div class="back-button">
-      <a href="index.html">⏎ Return to Launcher</a>
-    </div>
+  <div class="profile-card">
+    <h2>Player Profile</h2>
+    <p><strong>Name:</strong> Brenden Staal</p>
+    <p><strong>Team:</strong> Velocity Vex 🔴</p>
+    <p><strong>Role:</strong> Striker ⚽</p>
+    <p><strong>Hoverboard:</strong> Dragon Slayer X</p>
+    <p><strong>Rank:</strong> Level 8 — Shadow Captain</p>
+    <p><strong>Gear:</strong> ArcBoots, Redlight Armor, HoverStick Pro</p>
+    <p><strong>Tagline:</strong> “No Limits. No Gravity.”</p>
+    <a class="return-btn" href="index.html">🔙 Return to Launcher</a>
   </div>
 </body>
 </html>
