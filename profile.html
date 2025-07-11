@@ -3,107 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Profile</title>
+  <title>My Hover League Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 40px;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-image: url('assets/images/profile-background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
     }
-    h1 {
-      text-align: center;
-      color: #00f0ff;
-      margin-bottom: 30px;
-    }
-    .profile-container {
-      max-width: 600px;
-      margin: auto;
-      background: #111;
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      max-width: 500px;
+      margin: 80px auto;
       padding: 30px;
       border-radius: 12px;
-      border: 2px solid #00f0ff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
     }
-    .profile-field {
+
+    h1 {
+      text-align: center;
+      color: #00ffff;
       margin-bottom: 20px;
     }
+
     label {
       display: block;
-      color: #888;
-      margin-bottom: 5px;
-      font-size: 0.9em;
+      margin-top: 20px;
+      color: #fff;
     }
+
     input, select {
       width: 100%;
-      padding: 10px;
-      font-size: 1em;
+      padding: 12px;
+      margin-top: 5px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 14px;
     }
-    .save-btn {
-      background-color: #00f0ff;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+
+    button {
+      margin-top: 30px;
       width: 100%;
-      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #00ffff;
+      color: black;
       font-weight: bold;
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
     }
-    a.back {
-      display: block;
-      text-align: center;
-      margin-top: 40px;
-      color: #888;
-      text-decoration: none;
+
+    button:hover {
+      background-color: #00cccc;
     }
   </style>
 </head>
 <body>
-  <h1>👤 My Hover League Profile</h1>
+  <div class="container">
+    <h1>My Hover League Profile</h1>
+    
+    <label for="playerName">Player Name</label>
+    <input type="text" id="playerName" placeholder="Enter your name" />
 
-  <div class="profile-container">
-    <div class="profile-field">
-      <label for="player-name">Player Name</label>
-      <input type="text" id="player-name" placeholder="Enter your name" />
-    </div>
-    <div class="profile-field">
-      <label for="team">Team</label>
-      <select id="team">
-        <option value="velocity-vex">Velocity Vex 🔴</option>
-        <option value="specter-drift">Specter Drift 🔵</option>
-      </select>
-    </div>
-    <div class="profile-field">
-      <label for="role">Role</label>
-      <select id="role">
-        <option value="striker">Striker ⚽</option>
-        <option value="defender">Defender 🛡️</option>
-        <option value="support">Support 🔧</option>
-        <option value="scout">Scout 🕵️</option>
-        <option value="enforcer">Enforcer 💥</option>
-        <option value="tech">Tech Specialist 🧠</option>
-      </select>
-    </div>
-    <div class="profile-field">
-      <label for="board">Board Model</label>
-      <select id="board">
-        <option>Dark Mist</option>
-        <option>Dragon Slayer</option>
-        <option>Cloud Runner</option>
-        <option>Velocity Vex</option>
-        <option>Specter Drift</option>
-      </select>
-    </div>
-    <div class="profile-field">
-      <label for="gear">Gear</label>
-      <input type="text" id="gear" placeholder="Helmet, ArcBoots, Stick..." />
-    </div>
-    <button class="save-btn">Save My Profile</button>
+    <label for="teamName">Team</label>
+    <select id="teamName">
+      <option value="">Choose Team</option>
+      <option value="Velocity Vex">Velocity Vex 🔴</option>
+      <option value="Specter Drift">Specter Drift 🔵</option>
+    </select>
+
+    <label for="playerRole">Role</label>
+    <select id="playerRole">
+      <option value="">Choose Role</option>
+      <option value="Striker">⚽ Striker</option>
+      <option value="Defender">🛡️ Defender</option>
+      <option value="Support">🔧 Support</option>
+      <option value="Scout">🕵️ Scout</option>
+      <option value="Enforcer">💥 Enforcer</option>
+      <option value="Tech Specialist">🧠 Tech Specialist</option>
+    </select>
+
+    <label for="hoverboard">Hoverboard Model</label>
+    <input type="text" id="hoverboard" placeholder="e.g., Dragonfly or Dark Mist" />
+
+    <button>Save My Profile</button>
   </div>
-
-  <a class="back" href="index.html">← Back to Launcher</a>
 </body>
 </html>
